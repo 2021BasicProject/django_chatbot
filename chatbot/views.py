@@ -43,7 +43,12 @@ def chattrain(request):
     for intent in data['intents']:
         for pattern in intent['patterns']:
             training_sentences.append(pattern)
+            words = pattern.split()
+            for i in range(len(words) - 1):
+                training_sentences.append(words[i] + " " + words[i + 1])
             training_labels.append(intent['tag'])
+            for j in range(len(pattern.split()) - 1):
+                training_labels.append(intent['tag'])
         responses.append(intent['responses'])
 
         if intent['tag'] not in labels:
