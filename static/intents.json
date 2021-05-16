@@ -1,0 +1,71 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I.m 깨비, your bot assistant", "I'm 깨비, an Artificial Intelligent bot"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me 깨비.", "I'm 깨비!", "Just call me as 깨비"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {"tag": "createaccount",
+    "patterns": ["I need to create a new account", "how to open a new account", "I want to create an account", "can you create an account for me", "how to open a new account"],
+    "responses": ["You can just easily create a new account from our web site", "Just go to our web site and follow the guidelines to create a new account"]
+    },
+    {"tag": "complaint",
+    "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+    "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+    },
+    {"tag":"building",
+    "patterns":["Where is the building","Where","How to go to building"],
+    "responses":["Where do you want to go?Here is map of Chungbuk National University"]
+    },
+    {"tag": "S1-1",
+    "patterns": ["Where is S1-1", "S1-1", "Find S1-1","How to go to S1-1","Where S1-1"],
+    "responses": ["Here is map of Chungbuk National University Link :  https://ifh.cc/g/7EXRtQ.jpg"]
+    },
+    {"tag": "S1-2",
+    "patterns": ["Where is S1-2", "S1-2", "Find S1-2","How to go to S1-2","Where S1-2"],
+    "responses": ["Here is map of Chungbuk National University"]
+    },
+    {"tag": "S1-3",
+    "patterns": ["Where is S1-3", "S1-3", "Find S1-3","How to go to S1-2","Where S1-2"],
+    "responses": ["Here is map of Chungbuk National University"]
+    },
+    {"tag": "S1-4",
+    "patterns": ["Where is S1-4", "S1-4", "Find S1-4","How to go to S1-4","Where S1-4"],
+    "responses": ["Here is map of Chungbuk National University"]
+    },
+    {"tag": "S1-5",
+    "patterns": ["Where is S1-5", "S1-5", "Find S1-5","How to go to S1-5","Where S1-5"],
+    "responses": ["Here is map of Chungbuk National University"]
+    },
+    {"tag": "S1-6",
+    "patterns": ["Where is S1-6", "S1-6", "Find S1-6","How to go to S1-6","Where S1-6"],
+    "responses": ["Here is map of Chungbuk National University"]
+    },
+    {"tag": "S1-7",
+    "patterns": ["Where is S1-7", "S1-7", "Find S1-7","How to go to S1-7","Where S1-7"],
+    "responses": ["Here is map of Chungbuk National University"]
+    },
+    {"tag": "S2",
+    "patterns": ["Where is S2", "S2", "Find S2","How to go to S2","Where S2"],
+    "responses": ["Here is map of Chungbuk National University"]
+    }
+]
+}
