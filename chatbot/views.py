@@ -28,7 +28,7 @@ def chattrain(request):
     context = {}
 
     print('chattrain ---> +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-
+     
     # file = open(f"{CURRENT_WORKING_DIRECTORY}intents.json", encoding="UTF-8")
     file = open(f"./static/intents.json", encoding="UTF-8")
     data = json.loads(file.read())
@@ -36,9 +36,10 @@ def chattrain(request):
     # js = json.loads(data.decode("utf-8"))
 
     training_sentences = []
-    training_labels = []
-    labels = []
+    training_labels = [] #tag
+    labels = [] #
     responses = []
+    image=[]
 
     for intent in data['intents']:
         for pattern in intent['patterns']:
@@ -48,8 +49,11 @@ def chattrain(request):
                 training_sentences.append(words[i] + " " + words[i + 1])
             training_labels.append(intent['tag'])
             for j in range(len(pattern.split()) - 1):
-                training_labels.append(intent['tag'])
+                training_labels.append(intent['tag'])       
         responses.append(intent['responses'])
+        image.append(intent['image'])
+            #이미지 유무
+                
 
         if intent['tag'] not in labels:
             labels.append(intent['tag'])
@@ -150,16 +154,22 @@ def chatanswer(request):
         for i in data['intents']:
             if i['tag'] == tag:
                 txt1 = np.random.choice(i['responses'])
+                #image
+                image1 = i['image']
                 print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL, txt1)
 
         # print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL,random.choice(responses))
 
-        return txt1
+        return txt1,image1
 
     anstext = chat3(questext)
+    #image
+    image=chat3(questext)
     print(anstext)
 
     context['anstext'] = anstext
     context['flag'] = '0'
+    #image
+    context['image'] =image
 
     return JsonResponse(context, content_type="application/json")
