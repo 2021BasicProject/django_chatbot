@@ -41,7 +41,7 @@
             var strurl = "chatanswer?questext=" + chattext;
             //alert(strurl);
             //return false;
-
+            
             xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == 4) {
@@ -52,11 +52,14 @@
                     if(obj.flag == "0"){
 
                         // bottext = "<div style='margin:15px 0;text-align:left; font-size: 25px'><span style='padding:3px 10px;background-color:#EEE;border-radius:3px;'>" + obj.anstext + "</span></div>";  <!--수정-->
-
-                        if(obj.anstext)
+                        if(obj.anstext && obj.image=="1"){
+                        bottext = "<div style='margin:14px 0; text-align:left; font-size:25px'><span style='background-color:#DDDDDD; border-radius:6px;'><div><img src='/static/_images/chicken.png' width='50' height='50' >" +" "+ obj.anstext + "</div></span></div><img src='/static/_images/map.jpg' width='150' height='150' >"
+        document.getElementById("chatbox").innerHTML += bottext;
+                        }
+                        else if(obj.anstext && obj.image=="0"){
                         bottext = "<div style='margin:14px 0; text-align:left; font-size:25px'><span style='background-color:#DDDDDD; border-radius:6px;'><div><img src='/static/_images/chicken.png' width='50' height='50' >" +" "+ obj.anstext + "</div></span></div>"
         document.getElementById("chatbox").innerHTML += bottext;
-
+                        }
                         // document.getElementById("chatbox").innerHTML += bottext;
 
                         var objDiv = document.getElementById("chatbox");
