@@ -162,9 +162,9 @@ def chatanswer(request):
 
         return txt1,image1
 
-    anstext = chat3(questext)
+    anstext = chat3(questext)[0]
     #image
-    image=chat3(questext)
+    image=chat3(questext)[1]
     print(anstext)
 
     context['anstext'] = anstext
