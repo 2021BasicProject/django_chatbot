@@ -23,6 +23,7 @@ def home(request):
 
     return render(request, "chathome.html", context)
 
+#by BIPA SORI
 @csrf_exempt
 def chattrain(request):
     context = {}
