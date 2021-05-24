@@ -49,71 +49,68 @@
     "image":"1"
     },
     {"tag":"College of Humanities",
-    "patterns": ["인문대학","인문대","Humanities","korean Language and literature","chinese language and literature","English language and literature","german language and literature","french language and literature","russian language and literature"
-                ,"philosophy","history","archaeology and art history","국어국문학과","중어중문학과","영어영문학과","독일언어문화학과","프랑스언어문화학과","러시아언어문화학과","철학과","사학과","고고미술사학과"],
+    "patterns": ["Humanities","korean Language and literature","chinese language and literature","English language and literature","german language and literature","french language and literature","russian language and literature","philosophy","history","archaeology and art history"],
     "responses":["College of Humanities(인문대학)'s department is N16-1. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Social Sciences",
-    "patterns": ["사회과학대학","사과대","Social Sciences","Sociology","psychology","public administration","political science and international relations","사회학과","심리학과","행정학과","정치외교학과","경제학과"],
+    "patterns": ["Social Sciences","Sociology","psychology","public administration","political science and international relations"],
     "responses":["College of Social Sciences(사회과학대학)'s department is N5. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Natural Sciences",
-    "patterns": ["자연과학대학","자연대","Natural Sciences","Mathematics","information & statistics","physics","chemistry","biology","microbioloigy","biochemistry","astronomy & space science","earth and environmental sciences",
-                "수학과","정보통계학과","물리학과","화학과","생물학과","미생물학과","생화학과","천문우주학과","지구환경과학과"],
+    "patterns": ["Natural Sciences","Mathematics","information & statistics","physics","chemistry","biology","microbioloigy","biochemistry","astronomy & space science","earth and environmental sciences"],
     "responses":["College of Natural Sciences(자연과학대학)'s department is S1-1~S1-6. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Business",
-    "patterns": ["경영대학","경영대","International Business","Business","management information systems","경영학부","국제경영학과","경영정보학과"],
+    "patterns": ["International Business","Business","management information systems"],
     "responses":["College of Business(경영대학)'s apartment is N13. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Engineering",
-    "patterns": ["공과대학","공대","Civil Engineering","mechanical engineering","chemical engineering","advanced materials engineering","architectural engineering","safety engineering","environmental engineering","archaeology and art history"
-                ,"Environmental Engineering","engineering chemistry","urban engineering","architecture","토목공학부","기계공학부","화학공학과","신소재공학과","건축공학과","안전공학과","환경공학과","공업화학과","도시공학과","건축학과","테크노산업공학과"],
+    "patterns": ["Civil Engineering","mechanical engineering","chemical engineering","advanced materials engineering","architectural engineering","safety engineering","environmental engineering","archaeology and art history","Environmental Engineering","engineering chemistry","urban engineering","architecture"],
     "responses":["College of Engineering(공과대학)'s department is E8-1~E8-6. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Electrical & Computer Engineering",
-    "patterns": ["전자정보대학","전정대","Electrical Engineering","Electronics Engineering","Information and communitcation engineering","computer engineering","computer science","intelligent systems and robotics","전기공학부","전자공학부","정보통신공학부","컴퓨터공학과","소프트웨어학과","지능로봇공학과"],
+    "patterns": ["Electrical Engineering","Electronics Engineering","Information and communitcation engineering","computer engineering","computer science","intelligent systems and robotics"],
     "responses":["College of Electrical & Computer Engineering(전자정보대학)'s department is E8-7,E10,S4-1. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Education",
-    "patterns": ["사범대학","사범대","Education","Korean Education","English Education","History Education","Geography Education","Social Studies Education","Ethics Education","Physics Education","Chemistry Education",
-                "Biology Education","Earth Science Education","Mathematics Education","Physical Education","교육학과","국어교육과","영어교육과","역사교육과","지리교육과","사회교육과","윤리교육과","물리교육과","화학교육과","생물교육과","지구과학교육과","수학교육과","체육교육과"],
+    "patterns": ["Education","Korean Education","English Education","History Education","Geography Education","Social Studies Education","Ethics Education","Physics Education","Chemistry Education",
+                "Biology Education","Earth Science Education","Mathematics Education","Physical Education"],
     "responses":["College of Education(사범대학)'s department is E1-1~E1-2. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Agriculture, Life & Environment Sciences",
-    "patterns": ["농업생명환경대학","농생대","Crop Science","Environmental&Biological Chemistry","Food Science and Biotechnology","Animal Science","Industrial Plant Science & Technology","Horticultural Science","Plant Medicine","Forest Science","Agricultural and Rural Engineering","Biosystems Engineering","Wood and Paper Science","Agricultural Economics","산림학과","지역건설공학과","바이오시스템공학과","목재종이과학과","농업경제학과","식물자원학과","환경생명화학과","축산학과","식품생명공학과","특용식물학과","원예과학과","식물의학과"],
+    "patterns": ["Crop Science","Environmental&Biological Chemistry","Food Science and Biotechnology","Animal Science","Industrial Plant Science & Technology","Horticultural Science","Plant Medicine","Forest Science","Agricultural and Rural Engineering","Biosystems Engineering","Wood and Paper Science","Agricultural Economics"],
     "responses":["College of Agriculture, Life & Environment Sciences(농업생명환경대학)'s department is S21-1~S21-5. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Human Ecology",
-    "patterns": ["생활과학대","생과대","Dept. of Food and Nutrition","Child Welfare","Clothing & Textiles","Fashion Design Information","Housing & Interior Design","Consumer Science","식품영양학과","아동복지학과","의류학과","패션디자인정보학과","주거환경학과","소비자학과"],
+    "patterns": ["Dept. of Food and Nutrition","Child Welfare","Clothing & Textiles","Fashion Design Information","Housing & Interior Design","Consumer Science"],
     "responses":["College of Human Ecology(생활과학대)'s department is N20-1. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Veterinary Medicine",
-    "patterns": ["수의과대학","수의예과","수의학과","Veterinary Medicine"],
+    "patterns": ["Veterinary Medicine"],
     "responses":["College of Veterinary Medicine(수의과대학)'s department is E12-1~E12-2. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"College of Pharmacy",
-    "patterns": ["약학대학","약대","Pharmacy","Manufacturing Pharmacy","약학과","제약학과"],
+    "patterns": ["Pharmacy","Manufacturing Pharmacy"],
     "responses":["College of Pharmacy(약학대학)'s department is in Osong-eup. Not in Gaesin-dong"],
     "image":"0"
     },
     {"tag":"College of Medicine",
-    "patterns": ["의과대학","의대","Medicine","premedical"],
+    "patterns": ["Medicine","premedical"],
     "responses":["College of Medicine(의과대학)'s department is E8-1~E8-6. Here is map of Chungbuk National University"],
     "image":"1"
     },
     {"tag":"Nursing Science",
-        "patterns": ["간호학과","Nursing Science"],
+        "patterns": ["Nursing Science"],
         "responses":["College of Medicine(간호학과)'s department is S4-2. Here is map of Chungbuk National University"],
         "image":"1"
         },
