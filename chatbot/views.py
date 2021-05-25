@@ -90,7 +90,7 @@ def chattrain(request):
 
     model.summary()
 
-    epochs = 500
+    epochs = 1000
     history = model.fit(padded_sequences, np.array(training_labels), epochs=epochs)
 
     # to save the trained model
