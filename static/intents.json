@@ -16,12 +16,12 @@
     },
     {"tag": "about",
      "patterns": ["Who are you?", "What are you?", "Who you are?" ],
-     "responses": ["I.m 깨비, your bot assistant", "I'm 깨비, an Artificial Intelligent bot"],
+     "responses": ["I.m chicken bot, your bot assistant", "I'm chicken bot, an Artificial Intelligent bot"],
      "image":"0"
     },
     {"tag": "name",
     "patterns": ["what is your name", "what should I call you", "whats your name?"],
-    "responses": ["You can call me 깨비.", "I'm 깨비!", "Just call me as 깨비"],
+    "responses": ["You can call me chicken bot.", "I'm chicken bot!", "Just call me as chicken bot"],
     "image":"0"
     },
     {"tag": "help",
@@ -47,6 +47,38 @@
                 "E8-8","E8-9","E8-10","E8-11","E9","E10","E11-1","E11-2","E11-3","E11-4","E11-5","E11-6","E12-1","E12-2","E12-3"],
     "responses":["Here is map of Chungbuk National University"],
     "image":"1"
-    }asdfasfd
+    },
+    {"tag": "finding_restaurant",
+        "patterns": ["I'm hungry", "would you recommend restaurant?", "recommend food", "recommend restaurant", "food", "Would you recommend cafeteria?", "recommend dinner", "lunch","I want to eat"],
+        "responses": ["sned text: Korean, Japanese, Chinese, fastfood \n if you don't know what you want to eat, send text: help restaurant"],
+        "image":"0"
+    },
+    {"tag": "finding_Korean_restaurant",
+        "patterns": ["Korean restaurant","Korean","Korean food"],
+        "responses": ["한솥도시락","삼미파전닭갈비","꼬불꼬불","윤치리네 김치찌개","요리조리쿡쿡","파삼672","또또와식당","육쌈냉면","마초불고기","참돈&밥","산도닭발","맛존매콤닭불고기","삼춘네삼겹살","새마을식당","소주신랑보쌈부인","도니스토리","서래갈매기","보승회관","도누가그릴"
+        ,"안녕닭","한끼","평민닭발","장바우","시끌벅끌","본도시락","김밥천국","우주식탁","짱이네","햇살왕만두","청춘닭발","일미닭갈비","한끼삼계탕"],
+        "image":"0"
+    },
+    {"tag": "finding_Japanese_restaurant",
+        "patterns": ["Japanese restaurant","Japanese","Japanese food","Japan"],
+        "responses": ["노군텐동","멘야마쯔리","쿡메시야","우메다","초밥한조각","이우당","짚신스시&롤","야간스시","삼촌식당","무모한초밥"],
+        "image":"0"
+    },
+    {"tag": "finding_Chinese_restaurant",
+        "patterns": ["Chinese restaurant","Chinese","Chinese food","China"],
+        "responses": ["한가네짬뽕","화양양꼬치","북경깐풍기","홍콩반점0410","이런이궈","부먹찍먹걍먹","황궁쟁반짜장","중원양꼬치","탕화쿵푸마라탕"],
+        "image":"0"
+    },
+    {"tag": "finding_fastfood_restaurant",
+        "patterns": ["fastfood restaurant","fastfood","fastfod","recommend fastfood"],
+        "responses": ["롯데리아","맘스터치","burgerKing","Subway","Monsterpizza","vanish burger","Domino's pizza","모퉁이 파스타"],
+        "image":"0"
+    },
+    {"tag": "finding_random_restaurant",
+        "patterns": ["help food","food"],
+        "responses": ["이삭토스트",
+            "한솥도시락","자연을담은돈까스","레꼬마타코","노군텐동","맘스터치 충대중문점","프로마치","노랑통닭","신떡순 신천할매떡볶이","삼미파전닭갈비","big돈부리","멘야마쯔리","꼬불꼬불","꾸니굿","쿡메시야","윤치리네 김치찌개","요리조리쿡쿡","파삼672","한가네짬뽕","빨봉분식","또또와식당","고씨네","육쌈냉면","은화수식당","마초불고기","우메다","참돈&밥","UZBEGIM","화양양꼬치","산도닭발","맛존매콤닭불고기","초밥한조각","이우당","미스터리쿡","몬스터피자","북경깐풍기","삼춘네삼겹살","부리또인","새마을식당","소주신랑보쌈부인","육앤샤","도니스토리","서래갈매기","보승회관","충만치킨","지지고","청춘튀겨","와와떡볶이","누구나홀딱반한닭","도누가그릴","아웃닭","종가대박집","짚신스시&롤","홍콩반점0410","타지마할","안녕닭","롯데리아","First Nepal","봉추찜닭","에그문","엽떡","Subway","이런이궈","한끼","고급라면","부먹찍먹걍먹","야간스시","닭발방","평민닭발","뻘건집","황궁쟁반짜장","모퉁이파스타","파브리카","Domino's pizza","중원양꼬치","푸라닭","만든 족발","장바우","식끌벅끌","본도시락","페리카나","김밥천국","우주식탁","짱이네","바니시버거","몽키만두","삼촌식당","무모한초밥","햇살왕만두","파파돈","Pizza hut","탐라생고기","건방진김밥","The청춘족발","탕화쿵푸마라탕","오래돈까스","일미닭갈비","팟타야","한끼삼계탕"],
+        "image":"0"
+    }
 ]
 }

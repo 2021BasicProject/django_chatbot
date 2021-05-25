@@ -14,7 +14,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 
-
+#Minsung's HTML
 def start(request):
     return render(request, "start.html")
 
