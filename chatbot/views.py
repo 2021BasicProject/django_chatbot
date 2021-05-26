@@ -25,7 +25,7 @@ def home(request):
 def Global(): #key_words전역 변수선언
     global key_words
     key_words=[]
-#by Amila vraz
+#by BIPA SORI
 @csrf_exempt
 def chattrain(request):
     Global() #전역변수호출
@@ -44,6 +44,7 @@ def chattrain(request):
     labels = [] #
     responses = []
     image=[]
+    keyword=[]
 
     for intent in data['intents']:
         for pattern in intent['patterns']:
@@ -55,6 +56,7 @@ def chattrain(request):
             for j in range(len(pattern.split()) - 1):
                 training_labels.append(intent['tag'])       
         responses.append(intent['responses'])
+        keyword.append(intent['keywords'])
         image.append(intent['image'])
             #이미지 유무
                 
@@ -163,7 +165,7 @@ def chatanswer(request):
                     while txt1.find(key_word)!=-1: #txt1에서 keyword를 발견했다면 ,keyword가 없는 reponse가 부여되어야지 빠져나간다
                         txt1 = np.random.choice(intent['responses'])
                 image1 = intent['image'] #image
-            print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL, txt1)
+                print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL, txt1)
                 
         # print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL,random.choice(responses))
 
