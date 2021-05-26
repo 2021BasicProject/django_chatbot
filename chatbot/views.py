@@ -22,10 +22,13 @@ def home(request):
     context = {}
 
     return render(request, "chathome.html", context)
-
-#by BIPA SORI
+def Global(): #key_words전역 변수선언
+    global key_words
+    key_words=[]
+#by Amila vraz
 @csrf_exempt
 def chattrain(request):
+    Global() #전역변수호출
     context = {}
 
     print('chattrain ---> +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
@@ -90,7 +93,7 @@ def chattrain(request):
 
     model.summary()
 
-    epochs = 1000
+    epochs = 500
     history = model.fit(padded_sequences, np.array(training_labels), epochs=epochs)
 
     # to save the trained model
@@ -151,14 +154,17 @@ def chatanswer(request):
         result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]),
                                                                           truncating='post', maxlen=max_len))
         tag = lbl_encoder.inverse_transform([np.argmax(result)])
-
-        for i in data['intents']:
-            if i['tag'] == tag:
-                txt1 = np.random.choice(i['responses'])
-                #image
-                image1 = i['image']
-                print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL, txt1)
-
+        for intent in data['intents']:
+            if intent['tag'] == tag:
+                txt1 = np.random.choice(intent['responses']) 
+                for keyword in intent['keywords']: 
+                    key_words.append(keyword)#key_words에 해당 keyword싹다 넣는다
+                for key_word in key_words: 
+                    while txt1.find(key_word)!=-1: #txt1에서 keyword를 발견했다면 ,keyword가 없는 reponse가 부여되어야지 빠져나간다
+                        txt1 = np.random.choice(intent['responses'])
+                image1 = intent['image'] #image
+            print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL, txt1)
+                
         # print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL,random.choice(responses))
 
         return txt1,image1
