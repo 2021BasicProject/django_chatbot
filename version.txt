@@ -1,0 +1,18 @@
+How To Build Your Own Chatbot Using Deep Learning
+https://towardsdatascience.com/how-to-build-your-own-chatbot-using-deep-learning-bb41f970e281
+
+전략은 다양한 인 텐트를 정의하고 해당 인 텐트에 대한 학습 샘플을 만들고 이러한 학습 샘플 데이터를 모델 학습 데이터 (X)로, 의도를 모델 학습 범주 (Y)로 사용하여 챗봇 모델을 학습시키는 것
+
+django = 3.0.6
+tensorflow==2.3.1
+nltk==3.5
+colorama==0.4.3
+numpy==1.18.5
+scikit_learn==0.23.2
+Flask==1.1.2
+
+git branch changed
+design
+master
+view
+design

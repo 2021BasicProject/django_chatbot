@@ -1,0 +1,16 @@
+{"intents": [
+    {"tag": "noodle",
+     "patterns": ["I ate lamen","I ate noodle1","I ate noddle2"],
+     "responses": ["How about gymbap","How about toast"],
+     "image":"0",
+     "keywords":["lamen","noodle1","noodle2"]
+    },
+    {"tag": "bread",
+     "patterns": ["I ate toast", "I ate bread", "I ate hamburger"],
+     "responses": ["how about lamen", "How about noodle1", "how about chicken"],
+     "image":"0",
+     "keywords":["toast","bread","hamburger"]
+    }
+    
+]
+}
