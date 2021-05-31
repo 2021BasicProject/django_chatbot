@@ -2,37 +2,44 @@
     {"tag": "greeting",
      "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
      "responses": ["Hello", "Hi", "Hi there"],
-     "image":"0"
+     "image":"0",
+     "keywords":[]
     },
     {"tag": "goodbye",
      "patterns": ["Bye", "See you later", "Goodbye"],
      "responses": ["See you later", "Have a nice day", "Bye! Come back again"],
-     "image":"0"
+     "image":"0",
+     "keywords":[]
     },
     {"tag": "thanks",
      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
      "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"],
-     "image":"0"
+     "image":"0",
+     "keywords":[]
     },
     {"tag": "about",
      "patterns": ["Who are you?", "What are you?", "Who you are?"],
      "responses": ["I.m Chicken Bot, your bot assistant", "I'm Chicken Bot, an Artificial Intelligent bot"],
-     "image":"0"
+     "image":"0",
+     "keywords":[]
     },
     {"tag": "name",
     "patterns": ["what is your name", "what should I call you", "whats your name?"],
     "responses": ["You can call me Chicken bot.", "I'm Chicken bot!", "Just call me as Chicken bot"],
-    "image":"0"
+    "image":"0",
+    "keywords":[]
     },
     {"tag": "help",
     "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
     "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"],
-    "image":"0"
+    "image":"0",
+    "keywords":[]
     },
     {"tag": "complaint",
     "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
     "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"],
-    "image":"0"
+    "image":"0",
+    "keywords":[]
     },
     {"tag":"building",
     "patterns":["Where is the building","Where","How to go to building","I want to go","department","S1-1","S1-2","S1-3","S1-4","S1-5","S1-6","S1-7","S2","S3","S4-1","S4-2","S5-1","S5-2","S6-1","S6-2",
@@ -41,59 +48,69 @@
                 "N17-4","N17-5","N17-6","N18","N19","N20-1","N20-2","N21","E1-1","E1-2","E2","E3","E3-1","E4-1","E4-2","E4-3","E5","E6","E7-1","E7-2","E7-3","E8-1","E8-2","E8-3","E8-4","E8-5","E8-6","E8-7",
                 "E8-8","E8-9","E8-10","E8-11","E9","E10","E11-1","E11-2","E11-3","E11-4","E11-5","E11-6","E12-1","E12-2","E12-3"],
     "responses":["Here is map of Chungbuk National University. If you are looking for a college, just write down the name of the department or university."],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Humanities",
     "patterns": ["Humanities","How to get to Humanities","Could you tell me the best way to get to Humanities","Where is Humanities","korean Language and literature","How to get to korean Language and literature","Could you tell me the best way to get to korean Language and literature","Where is korean Language and literature","chinese language and literature","How to get to chinese language and literature","Could you tell me the best way to get to chinese language and literature","Where is chinese language and literature","English language and literature","How to get to English language and literature","Could you tell me the best way to get to English language and literature","Where is English language and literature","german language and literature","How to get to german language and literature","Could you tell me the best way to get to german language and literature","Where is german language and literature","french language and literature","How to get to french language and literature","Could you tell me the best way to get to french language and literature","Where is french language and literature","russian language and literature","philosophy","How to get to russian language and literature","philosophy","Could you tell me the best way to get to russian language and literature","philosophy","Where is russian language and literature","philosophy","history","How to get to history","Could you tell me the best way to get to history","Where is history","archaeology and art history","How to get to archaeology and art history","Could you tell me the best way to get to archaeology and art history","Where is archaeology and art history"
     ],
     "responses":["College of Humanities(인문대학)'s department is N16-1. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Social Sciences",
     "patterns": ["Social Sciences","How to get to Social Sciences","Could you tell me the best way to get to Social Sciences","Where is Social Sciences","Sociology","How to get to Sociology","Could you tell me the best way to get to Sociology","Where is Sociology","psychology","How to get to psychology","Could you tell me the best way to get to psychology","Where is psychology","public administration","How to get to public administration","Could you tell me the best way to get to public administration","Where is public administration","political science and international relations","How to get to political science and international relations","Could you tell me the best way to get to political science and international relations","Where is political science and international relations"
     ],
     "responses":["College of Social Sciences(사회과학대학)'s department is N5. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Natural Sciences",
     "patterns": ["Natural Sciences","Where is Mathematics","How to get to Natural Sciences","How to get to Mathematics","Could you tell me the best way to get to Natural Sciences","Could you tell me the best way to Mathematics","Where is Natural Sciences","Mathematics","information & statistics","How to get to information & statistics","Could you tell me the best way to get to information & statistics","Where is information & statistics","physics","chemistry","How to get to physics","chemistry","Could you tell me the best way to get to physics","chemistry","Where is physics","chemistry","biology","How to get to biology","Could you tell me the best way to get to biology","Where is biology","microbioloigy","biochemistry","How to get to microbioloigy","biochemistry","Could you tell me the best way to get to microbioloigy","biochemistry","Where is microbioloigy","biochemistry","astronomy & space science","How to get to astronomy & space science","Could you tell me the best way to get to astronomy & space science","Where is astronomy & space science","earth and environmental sciences","How to get to earth and environmental sciences","Could you tell me the best way to get to earth and environmental sciences","Where is earth and environmental sciences"
     ],
     "responses":["College of Natural Sciences(자연과학대학)'s department is S1-1~S1-6. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Business",
     "patterns": ["International Business","Could you tell me the best way to get to International Business","How to get to International Business","Where is International Business","Business","Could you tell me the best way to get to Business","How to get to Business","Where is Business","management information systems","Could you tell me the best way to get to management information systems","How to get to management information systems","Where is management information systems"
     ],
     "responses":["College of Business(경영대학)'s apartment is N13. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Engineering",
     "patterns": ["Civil Engineering","Could you tell me the best way to get to Civil Engineering","How to get to Civil Engineering","Where is Civil Engineering","mechanical engineering","Could you tell me the best way to get to mechanical engineering","How to get to mechanical engineering","Where is mechanical engineering","chemical engineering","Could you tell me the best way to get to chemical engineering","How to get to chemical engineering","Where is chemical engineering","advanced materials engineering","Could you tell me the best way to get to advanced materials engineering","How to get to advanced materials engineering","Where is advanced materials engineering","architectural engineering","Could you tell me the best way to get to architectural engineering","How to get to architectural engineering","Where is architectural engineering","safety engineering","Could you tell me the best way to get to safety engineering","How to get to safety engineering","Where is safety engineering","environmental engineering","Could you tell me the best way to get to environmental engineering","How to get to environmental engineering","Where is environmental engineering","archaeology and art history","Could you tell me the best way to get to archaeology and art history","How to get to archaeology and art history","Where is archaeology and art history","Environmental Engineering","Could you tell me the best way to get to Environmental Engineering","How to get to Environmental Engineering","Where is Environmental Engineering","engineering chemistry","Could you tell me the best way to get to engineering chemistry","How to get to engineering chemistry","Where is engineering chemistry","urban engineering","Could you tell me the best way to get to urban engineering","How to get to urban engineering","Where is urban engineering","architecture","Could you tell me the best way to get to architecture","How to get to architecture","Where is architecture"
     ],
     "responses":["College of Engineering(공과대학)'s department is E8-1~E8-6. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Electrical & Computer Engineering",
     "patterns": ["software","How to get to software","Could you tell me the best way to get to software","Where is software","Electrical Engineering","How to get to Electrical Engineering","Could you tell me the best way to get to Electrical Engineering","Where is Electrical Engineering","Electronics Engineering","How to get to Electronics Engineering","Could you tell me the best way to get to Electronics Engineering","Where is Electronics Engineering","Information and communitcation engineering","How to get to Information and communitcation engineering","Could you tell me the best way to get to Information and communitcation engineering","Where is Information and communitcation engineering","computer engineering","computer science","How to get to computer engineering","computer science","Could you tell me the best way to get to computer engineering","computer science","Where is computer engineering","computer science","intelligent systems and robotics","How to get to intelligent systems and robotics","Could you tell me the best way to get to intelligent systems and robotics","Where is intelligent systems and robotics"
     ],
     "responses":["College of Electrical & Computer Engineering(전자정보대학)'s department is E8-7,E10,S4-1. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Education",
     "patterns": ["Education","How to get to Education","Could you tell me the best way to get to Education","Where is Education","Korean Education","How to get to Korean Education","Could you tell me the best way to get to Korean Education","Where is Korean Education","English Education","How to get to English Education","Could you tell me the best way to get to English Education","Where is English Education","History Education","How to get to History Education","Could you tell me the best way to get to History Education","Where is History Education","Geography Education","How to get to Geography Education","Could you tell me the best way to get to Geography Education","Where is Geography Education","Social Studies Education","How to get to Social Studies Education","Could you tell me the best way to get to Social Studies Education","Where is Social Studies Education","Ethics Education","How to get to Ethics Education","Could you tell me the best way to get to Ethics Education","Where is Ethics Education","Physics Education","How to get to Physics Education","Could you tell me the best way to get to Physics Education","Where is Physics Education","Chemistry Education","How to get to Chemistry Education","Could you tell me the best way to get to Chemistry Education","Where is Chemistry Education","Biology Education","How to get to Biology Education","Could you tell me the best way to get to Biology Education","Where is Biology Education","Earth Science Education","How to get to Earth Science Education","Could you tell me the best way to get to Earth Science Education","Where is Earth Science Education","Mathematics Education","How to get to Mathematics Education","Could you tell me the best way to get to Mathematics Education","Where is Mathematics Education","Physical Education","How to get to Physical Education","Could you tell me the best way to get to Physical Education","Where is Physical Education"],
     "responses":["College of Education(사범대학)'s department is E1-1~E1-2. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Agriculture, Life & Environment Sciences",
     "patterns": ["agriculture life & environment sciences","Could you tell me the best way to agriculture life & environment sciences","How to get to agriculture life & environment sciences","Where is agriculture life & environment sciences","Crop Science","Could you tell me the best way to Crop Science","How to get to Crop Science","Where is Crop Science","Environmental&Biological Chemistry","Could you tell me the best way to Environmental&Biological Chemistry","How to get to Environmental&Biological Chemistry","Where is Environmental&Biological Chemistry","Food Science and Biotechnology","Could you tell me the best way to Food Science and Biotechnology","How to get to Food Science and Biotechnology","Where is Food Science and Biotechnology","Animal Science","Could you tell me the best way to Animal Science","How to get to Animal Science","Where is Animal Science","Industrial Plant Science & Technology","Could you tell me the best way to Industrial Plant Science & Technology","How to get to Industrial Plant Science & Technology","Where is Industrial Plant Science & Technology","Horticultural Science","Could you tell me the best way to Horticultural Science","How to get to Horticultural Science","Where is Horticultural Science","Plant Medicine","Could you tell me the best way to Plant Medicine","How to get to Plant Medicine","Where is Plant Medicine","Forest Science","Could you tell me the best way to Forest Science","How to get to Forest Science","Where is Forest Science","Agricultural and Rural Engineering","Could you tell me the best way to Agricultural and Rural Engineering","How to get to Agricultural and Rural Engineering","Where is Agricultural and Rural Engineering","Biosystems Engineering","Could you tell me the best way to Biosystems Engineering","How to get to Biosystems Engineering","Where is Biosystems Engineering","Wood and Paper Science","Could you tell me the best way to Wood and Paper Science","How to get to Wood and Paper Science","Where is Wood and Paper Science","Agricultural Economics","Could you tell me the best way to Agricultural Economics","How to get to Agricultural Economics","Where is Agricultural Economics"
     ],
     "responses":["College of Agriculture, Life & Environment Sciences(농업생명환경대학)'s department is S21-1~S21-5. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Human Ecology",
     "patterns": ["human ecology","Could you tell me the best way to human ecology","How to get to human ecology","Where is human ecology","Dept. of Food and Nutrition","Could you tell me the best way to Dept. of Food and Nutrition","How to get to Dept. of Food and Nutrition","Where is Dept. of Food and Nutrition","Child Welfare","Could you tell me the best way to Child Welfare","How to get to Child Welfare","Where is Child Welfare","Clothing & Textiles","Could you tell me the best way to Clothing & Textiles","How to get to Clothing & Textiles","Where is Clothing & Textiles","Fashion Design Information","Could you tell me the best way to Fashion Design Information","How to get to Fashion Design Information","Where is Fashion Design Information","Housing & Interior Design","Could you tell me the best way to Housing & Interior Design","How to get to Housing & Interior Design","Where is Housing & Interior Design","Consumer Science","Could you tell me the best way to Consumer Science","How to get to Consumer Science","Where is Consumer Science"],
     "responses":["College of Human Ecology(생활과학대)'s department is N20-1. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Veterinary Medicine",
     "patterns": [
@@ -103,19 +120,22 @@
         "Veterinary Medicine"
     ],
     "responses":["College of Veterinary Medicine(수의과대학)'s department is E12-1~E12-2. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"College of Pharmacy",
     "patterns": ["Pharmacy","Could you tell me the best way to get to Pharmacy","How to get to Pharmacy","Where is Pharmacy","Manufacturing Pharmacy","Could you tell me the best way to get to Manufacturing Pharmacy","How to get to Manufacturing Pharmacy","Where is Manufacturing Pharmacy"
     ],
     "responses":["College of Pharmacy(약학대학)'s department is in Osong-eup. Not in Gaesin-dong"],
-    "image":"0"
+    "image":"0",
+    "keywords":[]
     },
     {"tag":"College of Medicine",
     "patterns": ["Medicine","Could you tell me the best way to get to Medicine","How to get to Medicine","Where is Medicine","premedical","Could you tell me the best way to get to premedical","How to get to premedical","Where is premedical"
     ],
     "responses":["College of Medicine(의과대학)'s department is E8-1~E8-6. Here is map of Chungbuk National University"],
-    "image":"1"
+    "image":"1",
+    "keywords":[]
     },
     {"tag":"Nursing Science",
         "patterns": [
@@ -125,39 +145,58 @@
             "Where is Nursing Science"
         ],
         "responses":["College of Medicine(간호학과)'s department is S4-2. Here is map of Chungbuk National University"],
-        "image":"1"
+        "image":"1",
+        "keywords":[]
         },
     {"tag": "finding_restaurant",
         "patterns": ["I'm hungry", "would you recommend restaurant?", "recommend food", "recommend restaurant", "food", "Would you recommend cafeteria?", "recommend dinner", "lunch","I want to eat"],
         "responses": ["send text: Korean, Japanese, Chinese \n if you don't know what you want to eat, send text: help restaurant"],
-        "image":"0"
+        "image":"0",
+        "keywords":[]
     },
     {"tag": "finding_Korean_restaurant",
         "patterns": ["Korean restaurant","Korean","Korean food"],
         "responses": ["한솥도시락","삼미파전닭갈비","꼬불꼬불","윤치리네 김치찌개","요리조리쿡쿡","파삼672","또또와식당","육쌈냉면","마초불고기","참돈&밥","산도닭발","맛존매콤닭불고기","삼춘네삼겹살","새마을식당","소주신랑보쌈부인","도니스토리","서래갈매기","보승회관","도누가그릴"
         ,"안녕닭","한끼","평민닭발","장바우","시끌벅끌","본도시락","김밥천국","우주식탁","짱이네","햇살왕만두","청춘닭발","일미닭갈비","한끼삼계탕"],
-        "image":"0"
+        "image":"0",
+        "keywords":[]
     },
     {"tag": "finding_Japanese_restaurant",
         "patterns": ["Japanese restaurant","Japanese","Japanese food","Japan"],
         "responses": ["노군텐동","멘야마쯔리","쿡메시야","우메다","초밥한조각","이우당","짚신스시&롤","야간스시","삼촌식당","무모한초밥"],
-        "image":"0"
+        "image":"0",
+        "keywords":[]
     },
     {"tag": "finding_Chinese_restaurant",
         "patterns": ["Chinese restaurant","Chinese","Chinese food","China"],
         "responses": ["한가네짬뽕","화양양꼬치","북경깐풍기","홍콩반점0410","이런이궈","부먹찍먹걍먹","황궁쟁반짜장","중원양꼬치","탕화쿵푸마라탕"],
-        "image":"0"
+        "image":"0",
+        "keywords":[]
     },
     {"tag": "finding_fastfood_restaurant",
         "patterns": ["fastfood restaurant","fastfood","fastfod","recommend fastfood"],
         "responses": ["롯데리아","맘스터치","burgerKing","Subway","Monsterpizza","vanish burger","Domino's pizza","모퉁이 파스타"],
-        "image":"0"
+        "image":"0",
+        "keywords":[]
     },
     {"tag": "finding_random_restaurant",
         "patterns": ["help food","food"],
         "responses": ["이삭토스트",
             "한솥도시락","자연을담은돈까스","레꼬마타코","노군텐동","맘스터치 충대중문점","프로마치","노랑통닭","신떡순 신천할매떡볶이","삼미파전닭갈비","big돈부리","멘야마쯔리","꼬불꼬불","꾸니굿","쿡메시야","윤치리네 김치찌개","요리조리쿡쿡","파삼672","한가네짬뽕","빨봉분식","또또와식당","고씨네","육쌈냉면","은화수식당","마초불고기","우메다","참돈&밥","UZBEGIM","화양양꼬치","산도닭발","맛존매콤닭불고기","초밥한조각","이우당","미스터리쿡","몬스터피자","북경깐풍기","삼춘네삼겹살","부리또인","새마을식당","소주신랑보쌈부인","육앤샤","도니스토리","서래갈매기","보승회관","충만치킨","지지고","청춘튀겨","와와떡볶이","누구나홀딱반한닭","도누가그릴","아웃닭","종가대박집","짚신스시&롤","홍콩반점0410","타지마할","안녕닭","롯데리아","First Nepal","봉추찜닭","에그문","엽떡","Subway","이런이궈","한끼","고급라면","부먹찍먹걍먹","야간스시","닭발방","평민닭발","뻘건집","황궁쟁반짜장","모퉁이파스타","파브리카","Domino's pizza","중원양꼬치","푸라닭","만든 족발","장바우","식끌벅끌","본도시락","페리카나","김밥천국","우주식탁","짱이네","바니시버거","몽키만두","삼촌식당","무모한초밥","햇살왕만두","파파돈","Pizza hut","탐라생고기","건방진김밥","The청춘족발","탕화쿵푸마라탕","오래돈까스","일미닭갈비","팟타야","한끼삼계탕"],
-        "image":"0"
+        "image":"0",
+        "keywords":[]
+    },
+    {"tag": "noodle",
+        "patterns": ["I ate lamen","I ate noodle1","I ate noddle2"],
+        "responses": ["How about gymbap","How about toast"],
+        "image":"0",
+        "keywords":["lamen","noodle1","noodle2"]
+    },
+    {"tag": "bread",
+     "patterns": ["I ate toast", "I ate bread", "I ate hamburger"],
+     "responses": ["how about lamen", "How about noodle1", "how about chicken"],
+     "image":"0",
+     "keywords":["toast","bread","hamburger"]
     }
 ]
 }
