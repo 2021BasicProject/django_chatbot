@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
     {% block scripts %}
         <script>
@@ -33,7 +34,7 @@
                 return false;
             }
 
-            addtext = "<div style='margin:14px 0; text-align:right; font-size:25px'><span border-radius:6px; '><div>"+chattext +" "+"<img src='/static/_images/chaticon.jpg' width='50' height='50'></div></span></div>"
+            addtext = "<div style='margin:14px 0; text-align:right; font-size:25px'><span border-radius:6px; '><div>"+chattext +" "+"</div></span></div>"
 
         document.getElementById("chatbox").innerHTML += addtext;
             // addtext = "<div style='margin:15px 0;text-align:right; font-size: 25px'> <span style='padding:3px 10px;background-color:#ffea00;border-radius:3px;'>" + chattext + "</span></div>";   <!--수정-->
@@ -148,13 +149,13 @@
                 CBNU CHAT BOT                                                 <!--수정-->
             </td>
             <td width="50%" align="right">
-                <span onclick="chatTrain()" style="cursor:pointer;">Train</span>
+                <!-- <span onclick="chatTrain()" style="cursor:pointer;">Train</span> -->
             </td>
             </tr>
         </table>
     </div>
 
-    <div id="chatbox" style=height:650px;margin-left:25%;margin-right:25%;margin-top:50px;padding:10px;background-color:#92234e;overflow-y:scroll;overflow-x:hidden;max-height:100vh;"></div>
+    <div id="chatbox" style=height:650px;margin-left:25%;margin-right:25%;margin-top:50px;padding:10px;background-color:#ecb7e5;overflow-y:scroll;overflow-x:hidden;max-height:100vh;"></div>
 
     <div class="chatfooter">
         <table width="100%">
@@ -175,12 +176,12 @@
 
 <script>
 
-var input = document.getElementById("chattext");
+    var input = document.getElementById("chattext");
 
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    document.getElementById("sendbtn").click();
-  }
-});
+    input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        document.getElementById("sendbtn").click();
+    }
+    });
 
 </script>

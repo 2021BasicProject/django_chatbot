@@ -6,7 +6,57 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
           crossorigin="anonymous">
+          
+        {% block scripts %}
+          <script>
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
 
+        var csrftoken = getCookie('csrftoken');
+
+        var xhr;
+
+        
+        function chatTrain() {
+    
+            var strurl = "chattrain";
+            
+            alert("plese wait for chatbot-train\nNOTE: Do Not Press Start Button again");
+            //return false;
+    
+            xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                
+                if (xhr.readyState == 4) {
+                    alert("chickenbot almost thre!!!");
+                    var data = xhr.responseText;
+    
+                    var obj = JSON.parse(data);
+                    window.setTimeout('alert(obj.result_msg);window.close();',5000);
+                    //alert(obj.result_msg);
+                    location.href = "{% url 'home' %}";
+                }
+            };
+            xhr.open("GET", strurl);
+            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            xhr.send(null);
+        };
+        </script>
+    {% endblock %}
+    
     {% block styles %}
     <style>
     .mainbox {
@@ -22,6 +72,8 @@
     </style>
     {% endblock %}
 
+
+
 </head>
 
 <body>
@@ -32,7 +84,7 @@
             <br><br><br><br>
             <h1>CBNU CHAT BOT</h1>
             <br><br>
-            <a href = "{% url 'home' %}"><input type="button" class="btn btn-outline-danger position-absolute top-40 start-50 translate-middle" value="Start"></a>
+            <input type="button" class="btn btn-outline-danger position-absolute top-40 start-50 translate-middle" onclick="chatTrain()" value="start">
         </div>
     </div>
 
@@ -41,3 +93,15 @@
 </body>
 
 </html>
+
+<script>
+
+    var input = document.getElementById("chattext");
+    
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        document.getElementById("sendbtn").click();
+      }
+    });
+    
+    </script>

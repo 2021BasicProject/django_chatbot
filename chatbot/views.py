@@ -16,7 +16,8 @@ from sklearn.preprocessing import LabelEncoder
 
 
 def start(request):
-    return render(request, "start.html")
+    context = {}
+    return render(request, "start.html",context)
 
 def home(request):
     context = {}
