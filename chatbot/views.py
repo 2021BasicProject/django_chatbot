@@ -24,7 +24,7 @@ def home(request):
     return render(request, "chathome.html", context)
 def Global(): #key_words전역 변수선언
     global key_words
-    key_words=[]
+    key_words=[] #예외처리할 키워드 리스트
 #by BIPA SORI
 @csrf_exempt
 def chattrain(request):
