@@ -23,13 +23,13 @@ def home(request):
     context = {}
 
     return render(request, "chathome.html", context)
-def Global(): #key_words전역 변수선언
-    global key_words
-    key_words=[] #예외처리할 keyword
+# def Global(): #key_words전역 변수선언            예외처리할 keyword기능 구현중 2018038077박도영
+#     global key_words
+#     key_words=[]
 #by BIPA SORI
 @csrf_exempt
 def chattrain(request):
-    Global() #전역변수호출
+    # Global() #전역변수호출 예외처리할 keyword기능 구현중 2018038077박도영
     context = {}
 
     print('chattrain ---> +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
@@ -45,7 +45,7 @@ def chattrain(request):
     labels = [] #
     responses = []
     image=[]
-    keyword=[]
+    #keyword=[]  예외처리할 keyword기능 구현중 2018038077박도영
 
     for intent in data['intents']:
         for pattern in intent['patterns']:
@@ -57,7 +57,7 @@ def chattrain(request):
             for j in range(len(pattern.split()) - 1):
                 training_labels.append(intent['tag'])       
         responses.append(intent['responses'])
-        keyword.append(intent['keywords'])
+        #keyword.append(intent['keywords'])  예외처리할 keyword기능 구현중 2018038077박도영
         image.append(intent['image'])
             #이미지 유무
 
@@ -160,11 +160,11 @@ def chatanswer(request):
         for intent in data['intents']:
             if intent['tag'] == tag:
                 txt1 = np.random.choice(intent['responses']) 
-                for keyword in intent['keywords']: 
-                    key_words.append(keyword)#key_words에 해당 keyword싹다 넣는다
-                for key_word in key_words: 
-                    while txt1.find(key_word)!=-1: #txt1에서 keyword를 발견했다면 ,keyword가 없는 reponse가 부여되어야지 빠져나간다
-                        txt1 = np.random.choice(intent['responses'])
+                # for keyword in intent['keywords']:  예외처리할 keyword기능 구현중 2018038077박도영
+                #     key_words.append(keyword)#key_words에 해당 keyword싹다 넣는다
+                # for key_word in key_words: 
+                #     while txt1.find(key_word)!=-1: #txt1에서 keyword를 발견했다면 ,keyword가 없는 reponse가 부여되어야지 빠져나간다
+                #         txt1 = np.random.choice(intent['responses'])
                 image1 = intent['image'] #image
                 print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL, txt1)
 
