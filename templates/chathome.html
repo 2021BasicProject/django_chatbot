@@ -138,16 +138,16 @@
 <body style="height:100%;background-color:white;">
 
 <div style="padding:0px;height:100%;background-color:white;">
-
+<!-- 채팅 상단부 구현 정종현 -->
     <div class="chatheader">
         <table width="100%" border="0">
             <tr>
             <td width="0%" align="left">
                 <span style="cursor:pointer;"><a href="{% url 'start' %}" style="text-decoration: none">Back</a></span>
             </td>
-            <td width="100%" align="center" style="font-size:20px;">                <!--수정-->
+            <td width="100%" align="center" style="font-size:20px;">                <!--디자인 변경-->
                 <img src="{% static '_images/chaticon.png' %}" style="height:20px;opacity: 0.5;"/>
-                CBNU CHAT BOT                                                 <!--수정-->
+                CBNU CHAT BOT                                                 <!--챗봇 이름-->
             </td>
             <td width="50%" align="right">
                 <!-- <span onclick="chatTrain()" style="cursor:pointer;">Train</span> -->
@@ -157,14 +157,14 @@
     </div>
 
     <div id="chatbox" style=height:650px;margin-left:25%;margin-right:25%;margin-top:50px;padding:10px;background-color:#ecb7e5;overflow-y:scroll;overflow-x:hidden;max-height:100vh;"></div>
-
+<!-- 채팅 하단부 구현 정종현,노민성 -->
     <div class="chatfooter">
         <table width="100%">
             <tr>
             <td width="90%" >
                 <input id="chattext" style="padding:5px 0;width:100%;border:solid 0px #FFF;">
             </td>
-            <td width="10%"><button type ="button" class="btn btn-outline-danger" onclick="sendAsk()" id="sendbtn">SEND</button></td>         <!--수정-->
+            <td width="10%"><button type ="button" class="btn btn-outline-danger" onclick="sendAsk()" id="sendbtn">SEND</button></td>         <!--필요시 디자인 변경-->
             </tr>
         </table>
     </div>
