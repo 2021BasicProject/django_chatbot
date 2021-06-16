@@ -27,7 +27,7 @@ def home(request):
 #     global key_words
 #     key_words=[]
 
-#참고 : https://github.com/amilavm/Chatbot_Keras
+
 #by edited 이인규/박도영 
 #데이터 학습함수
 @csrf_exempt
@@ -88,7 +88,7 @@ def chattrain(request):
     padded_sequences = pad_sequences(sequences, truncating='post', maxlen=max_len)
 
     # Model Training
-
+    #open source 사용 : https://github.com/amilavm/Chatbot_Keras
     model = Sequential() #트레이닝
     model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
     model.add(GlobalAveragePooling1D())
