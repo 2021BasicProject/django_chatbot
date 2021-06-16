@@ -40,7 +40,7 @@ def chattrain(request):
 
     # js = json.loads(data.decode("utf-8"))
 
-    training_sentences = []
+    training_sentences = [] #트레이닝할 문장 리스트 형성 ,밑에 labels은 문장에 맞는 tag, responses는 문장에 대응되는 reponse들, image는 문장에 대응되는 image 유무리스트
     training_labels = [] #tag
     labels = [] #
     responses = []
@@ -65,18 +65,18 @@ def chattrain(request):
         if intent['tag'] not in labels:
             labels.append(intent['tag'])
 
-    num_classes = len(labels)
+    num_classes = len(labels) 
 
-    lbl_encoder = LabelEncoder()
+    lbl_encoder = LabelEncoder() #자연어를 인코딩 하는과정
     lbl_encoder.fit(training_labels)
     training_labels = lbl_encoder.transform(training_labels)
 
     vocab_size = 1000
     embedding_dim = 16
     max_len = 20
-    oov_token = "<OOV>"
+    oov_token = "<OOV>" #예외처리
 
-    tokenizer = Tokenizer(num_words=vocab_size, oov_token=oov_token)
+    tokenizer = Tokenizer(num_words=vocab_size, oov_token=oov_token) #인코딩 한것을 토큰화
     tokenizer.fit_on_texts(training_sentences)
     word_index = tokenizer.word_index
     sequences = tokenizer.texts_to_sequences(training_sentences)
@@ -84,7 +84,7 @@ def chattrain(request):
 
     # Model Training
 
-    model = Sequential()
+    model = Sequential() #트레이닝
     model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
     model.add(GlobalAveragePooling1D())
     model.add(Dense(16, activation='relu'))
@@ -93,10 +93,10 @@ def chattrain(request):
 
     model.compile(loss='sparse_categorical_crossentropy',
                   optimizer='adam', metrics=['accuracy'])
-
+ 
     model.summary()
 
-    epochs = 500
+    epochs = 500 #학습횟수 500회
     history = model.fit(padded_sequences, np.array(training_labels), epochs=epochs)
 
     # to save the trained model
