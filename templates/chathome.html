@@ -56,12 +56,12 @@
                     if(obj.flag == "0"){
 
                         // bottext = "<div style='margin:15px 0;text-align:left; font-size: 25px'><span style='padding:3px 10px;background-color:#EEE;border-radius:3px;'>" + obj.anstext + "</span></div>";  <!--수정-->
-                        <!-- 이미지 텍스트와 함께 보내줌 -->
+                        //이미지 텍스트와 함께 보내줌 
                         if(obj.anstext && obj.image=="1"){
                         bottext = "<div style='margin:14px 0; text-align:left; font-size:25px'><span style='background-color:#DDDDDD; border-radius:6px;'><div><img src='/static/_images/chicken.png' width='50' height='50' >" +" "+ obj.anstext + "</div></span></div><img src='/static/_images/map.jpg' width='150' height='150' >"
         document.getElementById("chatbox").innerHTML += bottext;
                         }
-                        <!-- 텍스트만 보내줌 -->
+                        //텍스트만 보내줌 
                         else if(obj.anstext && obj.image=="0"){
                         bottext = "<div style='margin:14px 0; text-align:left; font-size:25px'><span style='background-color:#DDDDDD; border-radius:6px;'><div><img src='/static/_images/chicken.png' width='50' height='50' >" +" "+ obj.anstext + "</div></span></div>"
         document.getElementById("chatbox").innerHTML += bottext;
@@ -90,7 +90,7 @@
 
             xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function() {
-                <!-- 정상이면 리턴 받음 -->
+                //정상이면 리턴 받음 
                 if (xhr.readyState == 4) {
                     var data = xhr.responseText;
 
