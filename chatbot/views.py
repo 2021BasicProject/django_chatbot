@@ -14,7 +14,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 
-#by 노민성/정종현
+#by 노민성/정종현 views.py와 html 연결
 def start(request):
     context = {}
     return render(request, "start.html",context)
@@ -27,6 +27,9 @@ def home(request):
 #     global key_words
 #     key_words=[]
 
+#참고 : https://github.com/amilavm/Chatbot_Keras
+#by edited 이인규/박도영 
+#데이터 학습함수
 @csrf_exempt
 def chattrain(request):
     # Global() #전역변수호출 예외처리할 keyword기능 구현중 2018038077박도영
@@ -34,7 +37,7 @@ def chattrain(request):
 
     print('chattrain ---> +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
     
-    #by 
+    #by 박도영 파일을 연 후 리스트에 데이터파일의 text 항목 넣기
     # file = open(f"{CURRENT_WORKING_DIRECTORY}intents.json", encoding="UTF-8")
     file = open(f"./static/intents.json", encoding="UTF-8")
     data = json.loads(file.read())
@@ -48,7 +51,7 @@ def chattrain(request):
     image=[]
     #keyword=[]  예외처리할 keyword기능 구현중 2018038077박도영
     
-    #by 박도영
+    #by 박도영 리스트에 데이터 넣기
     for intent in data['intents']:
         for pattern in intent['patterns']:
             training_sentences.append(pattern)
@@ -60,15 +63,13 @@ def chattrain(request):
                 training_labels.append(intent['tag'])       
         responses.append(intent['responses'])
         #keyword.append(intent['keywords'])  예외처리할 keyword기능 구현중 2018038077박도영
-        #by 이인규
-        image.append(intent['image'])
-            #이미지 유무
+        #by 이인규 이미지 key 추가
+        image.append(intent['image']) #이미지 유무
 
-        
         if intent['tag'] not in labels:
             labels.append(intent['tag'])
     
-    #by BIPA SORI
+    #by 출처에 tokenization/modeling 참고
     num_classes = len(labels) 
 
     lbl_encoder = LabelEncoder() #자연어를 인코딩 하는과정
@@ -160,9 +161,10 @@ def chatanswer(request):
         # while True:
         print(Fore.LIGHTBLUE_EX + "User: " + Style.RESET_ALL, end="")
         # inp = 'What is name'
-
+        
         result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]),
                                                                           truncating='post', maxlen=max_len))
+        #intents에서 tag에 맞는 값들 찾아내기
         tag = lbl_encoder.inverse_transform([np.argmax(result)])
         for intent in data['intents']:
             if intent['tag'] == tag:
@@ -179,7 +181,7 @@ def chatanswer(request):
         # print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL,random.choice(responses))
 
         return txt1,image1
-
+    
     #by 이인규
     anstext = chat3(questext)[0]
     #image
