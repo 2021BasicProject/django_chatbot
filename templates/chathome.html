@@ -1,3 +1,4 @@
+<!-- 정종현, 노민성 공동 제작 -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +14,7 @@
                 var cookies = document.cookie.split(';');
                 for (var i = 0; i < cookies.length; i++) {
                     var cookie = jQuery.trim(cookies[i]);
-                    // Does this cookie string begin with the name we want?
+                    
                     if (cookie.substring(0, name.length + 1) === (name + '=')) {
                         cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
                         break;
