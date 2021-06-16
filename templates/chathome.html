@@ -8,6 +8,7 @@
     <title>Chatbot</title>
     {% block scripts %}
      <!-- javascripts ajax "https://www.youtube.com/watch?v=S_hhnIEV9Ss&t=818s"참고 -->
+     <!-- 표준, csrf 토큰 생성 -->
         <script>
         function getCookie(name) {
             var cookieValue = null;
@@ -28,7 +29,7 @@
         var csrftoken = getCookie('csrftoken');
 
         var xhr;
-
+      
         function sendAsk() {
             chattext = document.getElementById("chattext").value;
             if(chattext == "") {
@@ -55,10 +56,12 @@
                     if(obj.flag == "0"){
 
                         // bottext = "<div style='margin:15px 0;text-align:left; font-size: 25px'><span style='padding:3px 10px;background-color:#EEE;border-radius:3px;'>" + obj.anstext + "</span></div>";  <!--수정-->
+                        <!-- 이미지 텍스트와 함께 보내줌 -->
                         if(obj.anstext && obj.image=="1"){
                         bottext = "<div style='margin:14px 0; text-align:left; font-size:25px'><span style='background-color:#DDDDDD; border-radius:6px;'><div><img src='/static/_images/chicken.png' width='50' height='50' >" +" "+ obj.anstext + "</div></span></div><img src='/static/_images/map.jpg' width='150' height='150' >"
         document.getElementById("chatbox").innerHTML += bottext;
                         }
+                        <!-- 텍스트만 보내줌 -->
                         else if(obj.anstext && obj.image=="0"){
                         bottext = "<div style='margin:14px 0; text-align:left; font-size:25px'><span style='background-color:#DDDDDD; border-radius:6px;'><div><img src='/static/_images/chicken.png' width='50' height='50' >" +" "+ obj.anstext + "</div></span></div>"
         document.getElementById("chatbox").innerHTML += bottext;
@@ -78,7 +81,7 @@
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
             xhr.send(null);
         }
-
+     
         function chatTrain() {
 
             var strurl = "chattrain";
@@ -87,6 +90,7 @@
 
             xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function() {
+                <!-- 정상이면 리턴 받음 -->
                 if (xhr.readyState == 4) {
                     var data = xhr.responseText;
 
