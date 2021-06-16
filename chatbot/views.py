@@ -51,7 +51,7 @@ def chattrain(request):
         for pattern in intent['patterns']:
             training_sentences.append(pattern)
             words = pattern.split()
-            for i in range(len(words) - 1):
+            for i in range(len(words) - 1): #문장의 단어집합을 형성해 챗봇대답의 정확성을 더 높임 //
                 training_sentences.append(words[i] + " " + words[i + 1])
             training_labels.append(intent['tag'])
             for j in range(len(pattern.split()) - 1):
