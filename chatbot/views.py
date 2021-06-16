@@ -14,7 +14,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 #by 이인규, 박도영 챗봇 train을 위한 python 소스 작성
-#by 노민성 python 소스를 views.py 변환
+#by 노민성,정종현 python 소스를 views.py 변환
 def start(request):
     context = {}
     return render(request, "start.html",context)
